@@ -1,0 +1,34 @@
+[
+  {
+    "id": "c01",
+    "name": "West paperless enrollment",
+    "offer": "A bill credit for switching to paperless billing.",
+    "channels": ["email"],
+    "constraint": "Do not mention contract status.",
+    "outcome": "Enrollment rose among households already on autopay."
+  },
+  {
+    "id": "c02",
+    "name": "Central premium-channel weekend",
+    "offer": "One free premium channel for a weekend.",
+    "channels": ["email", "sms"],
+    "constraint": "Limit the offer to one weekend.",
+    "outcome": "Redemptions came from households that already subscribed to video."
+  },
+  {
+    "id": "c03",
+    "name": "In-term second mobile line",
+    "offer": "A discount on adding a mobile line.",
+    "channels": ["email"],
+    "constraint": "Offer the discount only while the current contract is in term.",
+    "outcome": "Adds were mostly a second line."
+  },
+  {
+    "id": "c04",
+    "name": "Standard-tier loyalty credit",
+    "offer": "A one-time credit after two years on the standard internet tier.",
+    "channels": ["email"],
+    "constraint": "Do not extend the credit to the gig or basic tiers.",
+    "outcome": "Credits went to households past the two-year mark on the standard tier."
+  }
+]

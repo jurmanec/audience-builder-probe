@@ -1,0 +1,13 @@
+{
+  "name": "at-risk renewal",
+  "recorded_before_sql": true,
+  "predicate": {
+    "all": [
+      { "field": "tenure_months", "op": "gte", "value": 12 },
+      { "field": "contract_status", "op": "eq", "value": "month_to_month" },
+      { "field": "support_contacts_90d", "op": "gte", "value": 2 }
+    ]
+  },
+  "count": 8,
+  "household_ids": ["h01", "h02", "h03", "h04", "h05", "h06", "h07", "h08"]
+}

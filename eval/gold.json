@@ -1,0 +1,66 @@
+[
+  {
+    "id": "g01",
+    "objective": "Month-to-month households with at least a year of tenure and recent support contact.",
+    "attribute_families": ["tenure_months", "contract_status", "support_contacts_90d"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 1800, "max": 2500 },
+    "template_intent": "at-risk renewal"
+  },
+  {
+    "id": "g02",
+    "objective": "Heavy data users in the north who are on no internet tier or the basic tier.",
+    "attribute_families": ["region", "internet_tier", "data_gb_30d"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 300, "max": 600 },
+    "template_intent": "heavy-use upgrade"
+  },
+  {
+    "id": "g03",
+    "objective": "Video subscribers who are not on autopay and have not had an offer for at least 180 days.",
+    "attribute_families": ["video_subscribed", "autopay", "days_since_last_offer"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 800, "max": 1300 },
+    "template_intent": "lapsed video offer"
+  },
+  {
+    "id": "g04",
+    "objective": "In-term households with a monthly bill of at least $250 and autopay off.",
+    "attribute_families": ["monthly_bill_cents", "contract_status", "autopay"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 300, "max": 650 },
+    "template_intent": null
+  },
+  {
+    "id": "g05",
+    "objective": "Households in the south or west with at least three mobile lines.",
+    "attribute_families": ["region", "mobile_lines"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 1400, "max": 2000 },
+    "template_intent": null
+  },
+  {
+    "id": "g06",
+    "objective": "Gig-internet households in their first six months.",
+    "attribute_families": ["internet_tier", "tenure_months"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "size_band": { "min": 20, "max": 80 },
+    "template_intent": null
+  },
+  {
+    "id": "g07",
+    "objective": "Households targeted by age.",
+    "attribute_families": ["age_years"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "outcome": "no_audience",
+    "template_intent": null
+  },
+  {
+    "id": "g08",
+    "objective": "Households with more than 240 months of tenure.",
+    "attribute_families": ["tenure_months"],
+    "forbidden_fields": ["age_years", "household_income_cents", "ethnicity"],
+    "outcome": "no_audience",
+    "template_intent": null
+  }
+]

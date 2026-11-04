@@ -1,0 +1,10 @@
+.venv/
+out/
+docs/internal/
+.cursor/
+.env
+logs/
+__pycache__/
+*.py[cod]
+*.duckdb
+.DS_Store

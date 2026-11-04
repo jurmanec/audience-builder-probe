@@ -1,0 +1,103 @@
+{
+  "attributes": [
+    {
+      "name": "tenure_months",
+      "type": "int",
+      "usable": true,
+      "operators": ["gte", "lte", "between"],
+      "min": 0,
+      "max": 240
+    },
+    {
+      "name": "region",
+      "type": "enum",
+      "usable": true,
+      "operators": ["eq", "in"],
+      "values": ["north", "central", "south", "west"]
+    },
+    {
+      "name": "internet_tier",
+      "type": "enum",
+      "usable": true,
+      "operators": ["eq", "in"],
+      "values": ["none", "basic", "standard", "gig"]
+    },
+    {
+      "name": "mobile_lines",
+      "type": "int",
+      "usable": true,
+      "operators": ["eq", "gte", "lte"],
+      "min": 0,
+      "max": 8
+    },
+    {
+      "name": "video_subscribed",
+      "type": "bool",
+      "usable": true,
+      "operators": ["eq"]
+    },
+    {
+      "name": "contract_status",
+      "type": "enum",
+      "usable": true,
+      "operators": ["eq", "in"],
+      "values": ["month_to_month", "in_term"]
+    },
+    {
+      "name": "monthly_bill_cents",
+      "type": "int",
+      "usable": true,
+      "operators": ["gte", "lte", "between"],
+      "min": 0,
+      "max": 40000
+    },
+    {
+      "name": "data_gb_30d",
+      "type": "int",
+      "usable": true,
+      "operators": ["gte", "lte", "between"],
+      "min": 0,
+      "max": 2000
+    },
+    {
+      "name": "support_contacts_90d",
+      "type": "int",
+      "usable": true,
+      "operators": ["gte", "lte"],
+      "min": 0,
+      "max": 20
+    },
+    {
+      "name": "autopay",
+      "type": "bool",
+      "usable": true,
+      "operators": ["eq"]
+    },
+    {
+      "name": "days_since_last_offer",
+      "type": "int",
+      "usable": true,
+      "operators": ["gte", "lte"],
+      "min": 0,
+      "max": 999
+    },
+    {
+      "name": "age_years",
+      "type": "int",
+      "usable": false,
+      "operators": []
+    },
+    {
+      "name": "household_income_cents",
+      "type": "int",
+      "usable": false,
+      "operators": []
+    },
+    {
+      "name": "ethnicity",
+      "type": "enum",
+      "usable": false,
+      "operators": []
+    }
+  ]
+}
